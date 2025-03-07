@@ -14,13 +14,13 @@
 ✅ **Pronunciation Audio** 🔊 – Hear how the word is pronounced  
 ✅ **Elegant, Royal UI** 🎨 – Uses **Cinzel & Josefin Sans** for a **luxurious** look  
 ✅ **Fully Responsive** 📱 – Works flawlessly on **mobile, tablet, and desktop**  
-✅ **Deployed on GitHub Pages** 🌍 – [View Live Demo](https://YOUR_USERNAME.github.io/dictionary-app/)  
+✅ **Deployed on GitHub Pages** 🌍 – [View Live Demo](https://wordsage.netlify.app/)  
 
 ---
 
 ## 🎥 Demo
 
-🔗 **Live Preview:** [https://YOUR_USERNAME.github.io/dictionary-app/](https://YOUR_USERNAME.github.io/dictionary-app/)  
+🔗 **Live Preview:** [Link](https://wordsage.netlify.app/)  
 
 ---
 
@@ -81,9 +81,9 @@ Contributions are **welcome**! If you want to **improve the UI**, **add more fea
 
 ## 📬 Contact
 
-💌 **Email:** [your_email@example.com](jayanthdonavalli0124@gmail.com)  
-💼 **LinkedIn:** [Your LinkedIn](https://www.linkedin.com/in/jayanth-donavalli)  
-🐙 **GitHub:** [Your GitHub](https://github.com/jayanth0124)  
+💌 **Email:** [jayanthdonavalli0124@gmail.com](jayanthdonavalli0124@gmail.com)  
+💼 **LinkedIn:** [Donavalli Jayanth](https://www.linkedin.com/in/jayanth-donavalli)  
+🐙 **GitHub:** [Jayanth0124](https://github.com/jayanth0124)  
 
 ---
 
