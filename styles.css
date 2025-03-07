@@ -1,0 +1,320 @@
+/* Prevent horizontal scroll */
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    background: #f8f9fa; /* Light, premium background */
+    color: #333;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #004085; /* Deep royal blue */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Header Title - Luxurious, Engraved Feel */
+header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Logo and Title */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: gold;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+nav ul li a:hover {
+    color: white;
+}
+
+
+/* Main Container */
+.container {
+    max-width: 720px; /* Slightly more than 700px for better layout */
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input, select, button {
+    padding: 12px;
+    border: 2px solid #004085;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input {
+    width: 65%;
+}
+
+button {
+    background: gold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ffd700;
+}
+
+/* About Section with SVG */
+#about {
+    text-align: center;
+    background: white;
+    padding: 60px;
+    margin-top: 40px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.about-svg {
+    max-width: 250px;
+    height: auto;
+}
+
+/* Wikipedia Info (Hidden Initially) */
+#wikipedia-info {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background: #f5f5f5;
+    border-left: 5px solid #004085;
+    border-radius: 8px;
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wikipedia-info h3 {
+    color: #004085;
+}
+
+#wikipedia-info a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #004085;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#wikipedia-info a:hover {
+    text-decoration: underline;
+}
+
+/* Image Container */
+#imageContainer img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Contact Section */
+#contact {
+    background: #e3e3e3;
+    padding: 40px;
+}
+
+#contact a {
+    color: #004085;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer (Reduced Size) */
+footer {
+    background: #004085;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 10px 10px 0 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.social-icons a {
+    color: gold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+
+
+/* Fix for large text breaking layout */
+h2, h3, p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Ensure images are responsive and do not overflow */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Ensure buttons do not stretch beyond screen */
+button {
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    /* Make SVG Centered for Mobile */
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-svg {
+        width: 200px;
+        margin-top: 20px;
+    }
+}
+
+/* Unique Styling for "Meaning" Section */
+.meaning-box {
+    background: #fff8e1; /* Light golden background */
+    border-left: 6px solid gold; /* Golden left border for highlight */
+    padding: 15px;
+    font-family: 'Cinzel', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #333;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Initially hidden */
+    transform: translateY(10px);
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+/* Animated Text Appearance */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Quote Icon */
+.meaning-box::before {
+    content: "❝";
+    font-size: 30px;
+    color: gold;
+    position: relative;
+    left: -5px;
+    top: -5px;
+}
+
+.meaning-box::after {
+    content: "❞";
+    font-size: 30px;
+    color: gold;
+    position: relative;
+    left: 5px;
+    bottom: -5px;
+}
