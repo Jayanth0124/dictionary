@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Github, Linkedin, Instagram, ExternalLink, BookOpen } from 'lucide-react';
+import { Heart, Github, Linkedin, Instagram, ExternalLink } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const socialLinks = [
@@ -37,10 +37,11 @@ const Footer: React.FC = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-3 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl">
-                <BookOpen className="w-8 h-8 text-white" />
+              {/* === LOGO BOX STYLE UPDATED === */}
+              <div className="p-2 bg-slate-700 rounded-xl">
+                <img src="/logo.svg" alt="Word Sage Logo" className="w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-semibold tracking-tight"></h3>
+              <h3 className="text-2xl font-semibold tracking-tight">Word Sage</h3>
             </div>
             <p className="text-slate-300 leading-relaxed font-light mb-6 max-w-md">
               A calm, study-oriented dictionary designed for focused learning. 
