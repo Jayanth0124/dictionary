@@ -1,91 +1,116 @@
-# 📖 Premium Dictionary App
+<div align="center">
+  <img src="public/images.svg" alt="Word Sage Logo" width="120" />
+  <h1>Word Sage</h1>
+  <p><strong>Your Calm Study Dictionary 📖</strong></p>
+  <p>A modern, feature-rich dictionary application designed for a peaceful, distraction-free learning experience.</p>
 
-🚀 A **modern, elegant, and feature-rich dictionary** that provides **word meanings, synonyms, phonetics, Wikipedia summaries, and high-quality images** – all in a beautifully designed interface.
+  <!-- Badges -->
+  <p>
+    <img src="https://img.shields.io/badge/status-live-brightgreen?style=for-the-badge" alt="Status" />
+    <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+    <img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge" alt="License" />
+  </p>
+</div>
 
+<!-- Glass Effect Buttons -->
+<div align="center" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); padding: 40px 20px; border-radius: 20px; margin: 30px 0;">
+  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+    <a href="https://www.jayanth.site" target="_blank" style="text-decoration: none;">
+      <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px 30px; color: white; font-weight: 600; font-family: sans-serif; transition: all 0.3s ease; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);">
+        👨‍💻 My Portfolio
+      </div>
+    </a>
+    <a href="https://wordsage.netlify.app/" target="_blank" style="text-decoration: none;">
+      <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px 30px; color: white; font-weight: 600; font-family: sans-serif; transition: all 0.3s ease; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);">
+        🚀 Live Demo
+      </div>
+    </a>
+  </div>
+</div>
 
----
+## ✨ Key Features
 
-## 🌟 Features
+Word Sage is more than just a dictionary. It's a complete toolkit for mastering words in a calm, focused environment.
 
-✅ **Instant Word Search** – Get meanings, synonyms, and phonetics in seconds  
-✅ **Wikipedia Integration** – Displays a summary for the searched word  
-✅ **High-Quality Images** – Fetches related images via Pixabay API  
-✅ **Speech Recognition** 🎙️ – Search by speaking instead of typing  
-✅ **Pronunciation Audio** 🔊 – Hear how the word is pronounced  
-✅ **Elegant, Royal UI** 🎨 – Uses **Cinzel & Josefin Sans** for a **luxurious** look  
-✅ **Fully Responsive** 📱 – Works flawlessly on **mobile, tablet, and desktop**  
-✅ **Deployed on GitHub Pages** 🌍 – [View Live Demo](https://wordsage.netlify.app/)  
-
----
-
-## 🎥 Demo
-
-🔗 **Live Preview:** [Link](https://wordsage.netlify.app/)  
+-   **🧠 Smart Word Search:** Instantly find comprehensive definitions, meanings, and usage examples.
+-   **🔊 Audio Pronunciation:** Listen to correct US/UK pronunciations for perfect learning.
+-   **🎤 Voice Search:** Search hands-free using your browser's built-in voice recognition.
+-   **🖼️ Visual Context:** View a grid of related images from Pexels to enhance memory.
+-   **📜 Rich Definitions:** Get multiple meanings, parts of speech, and detailed explanations.
+-   **🌍 Etymology & Origins:** Discover the fascinating history and linguistic roots of words.
+-   **🔗 Synonyms & Related Words:** Explore connections by clicking on synonyms to search for them.
+-   **📚 Extended Learning:** Read a comprehensive overview from Wikipedia directly within the app.
+-   **☀️ Word of the Day:** Learn something new every day with a carefully curated word.
+-   **📋 Easy Copy & Paste:** Copy definitions with one click for your notes.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **HTML5** – Structured layout  
-- **CSS3** – Premium styling with **Cinzel & Josefin Sans** fonts  
-- **JavaScript (ES6)** – Handles API calls and interactions  
-- **Dictionary API** – Fetches word definitions  
-- **Wikipedia API** – Provides extra word details  
-- **Pixabay API** – Displays related images  
-- **GitHub Pages** – Deployed for easy access  
+This project is built with a modern, efficient, and scalable technology stack.
+
+-   **Framework:** [React](https://reactjs.org/) (with Vite)
+-   **Language:** [TypeScript](https://www.typescriptlang.org/)
+-   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+-   **Icons:** [Lucide React](https://lucide.dev/)
+-   **APIs:**
+    -   [Free Dictionary API](https://dictionaryapi.dev/) for definitions.
+    -   [Pexels API](https://www.pexels.com/api/) for visual context.
+    -   [Wikipedia API](https://www.mediawiki.org/wiki/API:Main_page) for extended learning.
 
 ---
 
-## 📦 Installation & Usage
+## 🚀 Getting Started
 
-### 🔹 1️⃣ Clone the Repository  
-```sh
-git clone https://github.com/YOUR_USERNAME/dictionary-app.git
-cd dictionary-app
-```
+To get a local copy up and running, follow these simple steps.
 
-### 🔹 2️⃣ Open `index.html`
-Simply open `index.html` in your browser.
+### Prerequisites
 
----
+-   Node.js (v18 or higher recommended)
+-   npm or yarn
 
-## 🚀 Deployment
+### Installation
 
-This app is hosted on **GitHub Pages**.  
-To **deploy your own version**, follow these steps:  
+1.  **Clone the repository:**
+    ```sh
+    git clone [https://github.com/Jayanth0124/dictionary.git](https://github.com/Jayanth0124/dictionary.git)
+    cd word-sage
+    ```
 
-1. Push your project to GitHub  
-2. Go to **Settings > Pages**  
-3. Select **Main Branch** & Click **Save**  
-4. Visit: `https://YOUR_USERNAME.github.io/dictionary-app/`  
+2.  **Install dependencies:**
+    ```sh
+    npm install
+    ```
 
----
+3.  **Set up environment variables:**
+    -   Create a file named `.env.local` in the root of your project.
+    -   Get a free API key from [Pexels](https://www.pexels.com/api/).
+    -   Add your key to the `.env.local` file:
+        ```env
+        VITE_PEXELS_API_KEY="YOUR_PEXELS_API_KEY_HERE"
+        ```
 
-## 📝 License
-
-This project is **open-source** and available under the **MIT License**.
-
----
-
-## 🤝 Contributing
-
-Contributions are **welcome**! If you want to **improve the UI**, **add more features**, or **fix bugs**, follow these steps:
-
-1. **Fork the repository**
-2. **Create a new branch** (`git checkout -b feature-name`)
-3. **Make your changes**
-4. **Commit & Push** (`git commit -m "Added feature XYZ" && git push origin feature-name`)
-5. **Create a Pull Request**
+4.  **Run the development server:**
+    ```sh
+    npm run dev
+    ```
+    Open [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal) to view it in the browser.
 
 ---
 
-## 📬 Contact
+## 👨‍💻 Author
 
-💌 **Email:** [jayanthdonavalli0124@gmail.com](jayanthdonavalli0124@gmail.com)  
-💼 **LinkedIn:** [Donavalli Jayanth](https://www.linkedin.com/in/jayanth-donavalli)  
-🐙 **GitHub:** [Jayanth0124](https://github.com/jayanth0124)  
+**Donavalli Jayanth**
+
+-   **Portfolio:** [jayanth.site](https://www.jayanth.site)
+-   **GitHub:** [@Jayanth0124](https://github.com/Jayanth0124)
+-   **LinkedIn:** [Jayanth Donavalli](https://www.linkedin.com/in/jayanth-donavalli)
+-   **Instagram:** [@jayanth.chowdary__](https://www.instagram.com/jayanth.chowdary__)
 
 ---
 
-### 🚀 **Thank You for Visiting!**
-🔥 If you like this project, **consider giving it a star ⭐ on GitHub!**  
+## 📄 License
+
+This project is distributed under the MIT License. See `LICENSE` for more information.
