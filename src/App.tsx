@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
+import { Helmet, HelmetProvider } from 'react-helmet-async'; // Import Helmet
 import Header from './components/Header';
 import Hero from './components/Hero';
 import SearchBar from './components/SearchBar';
@@ -7,10 +8,10 @@ import WordOfTheDay from './components/WordOfTheDay';
 import FeaturesSection from './components/FeaturesSection';
 import AboutSection from './components/AboutSection';
 import Footer from './components/Footer';
-import Modal from './components/Modal'; // <-- Import the new Modal component
+import Modal from './components/Modal';
 import { WordData } from './types';
 
-// The Privacy Section is now a trigger for the modal
+// ... (PrivacySection component remains the same)
 const PrivacySection = ({ onOpen }: { onOpen: () => void }) => (
   <section id="privacy" className="py-20 px-4 text-center scroll-mt-20">
     <div className="max-w-4xl mx-auto">
@@ -28,16 +29,17 @@ const PrivacySection = ({ onOpen }: { onOpen: () => void }) => (
   </section>
 );
 
+
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [wordData, setWordData] = useState<WordData | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [showResults, setShowResults] = useState(false);
-  const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false); // <-- State for the modal
+  const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
 
   const searchWord = useCallback(async (word: string) => {
-    // ... (searchWord function remains the same)
+    // ... (searchWord function logic remains the same)
     if (!word.trim()) return;
     setLoading(true);
     setError(null);
@@ -87,9 +89,18 @@ function App() {
     window.addEventListener('searchWord', handleSynonymSearch as EventListener);
     return () => window.removeEventListener('searchWord', handleSynonymSearch as EventListener);
   }, [searchWord]);
+  
+  // Dynamic SEO content
+  const pageTitle = showResults && wordData ? `${wordData.word} - Definition | Word Sage` : 'Word Sage - Your Calm Study Dictionary';
+  const pageDescription = showResults && wordData ? `Meaning, pronunciation, synonyms, and etymology for the word "${wordData.word}".` : 'A modern dictionary for focused learning with definitions, audio, synonyms, and visual context.';
 
   return (
-    <>
+    <HelmetProvider>
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+      </Helmet>
+
       <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
         <Header />
         
@@ -133,12 +144,12 @@ function App() {
         <Footer />
       </div>
 
-      {/* The Modal component is rendered here */}
       <Modal 
         isOpen={isPrivacyModalOpen} 
         onClose={() => setIsPrivacyModalOpen(false)}
         title="Privacy Policy"
       >
+        {/* ... (Modal content remains the same) ... */}
         <h4>1. Information We Collect</h4>
         <p>We do not collect any personal information, search history, or usage data from our users. Your activity within Word Sage remains completely private and is not stored or tracked.</p>
         
@@ -160,7 +171,7 @@ function App() {
         <h4>5. Changes to This Policy</h4>
         <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page. This policy is effective as of August 29, 2025.</p>
       </Modal>
-    </>
+    </HelmetProvider>
   );
 }
 
