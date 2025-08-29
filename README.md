@@ -14,20 +14,14 @@
   </p>
 </div>
 
-<!-- Glass Effect Buttons -->
-<div align="center" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); padding: 40px 20px; border-radius: 20px; margin: 30px 0;">
-  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-    <a href="https://www.jayanth.site" target="_blank" style="text-decoration: none;">
-      <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px 30px; color: white; font-weight: 600; font-family: sans-serif; transition: all 0.3s ease; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);">
-        👨‍💻 My Portfolio
-      </div>
-    </a>
-    <a href="https://wordsage.netlify.app/" target="_blank" style="text-decoration: none;">
-      <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.2); padding: 15px 30px; color: white; font-weight: 600; font-family: sans-serif; transition: all 0.3s ease; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);">
-        🚀 Live Demo
-      </div>
-    </a>
-  </div>
+<!-- === UPDATED LINKS SECTION === -->
+<div align="center" style="margin: 30px 0;">
+  <a href="https://www.jayanth.site" target="_blank">
+    <img src="https://img.shields.io/badge/-My%20Portfolio-blue?style=for-the-badge&logo=briefcase" alt="Portfolio"/>
+  </a>
+  <a href="https://wordsage.netlify.app/" target="_blank">
+    <img src="https://img.shields.io/badge/-Live%20Demo-brightgreen?style=for-the-badge&logo=rocket" alt="Live Demo"/>
+  </a>
 </div>
 
 ## ✨ Key Features
