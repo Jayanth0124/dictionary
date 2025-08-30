@@ -18,7 +18,6 @@ const Hero: React.FC = () => {
             Dictionary
           </span>
         </h1>
-        
         <p className="text-xl text-slate-600 mb-12 max-w-2xl mx-auto leading-relaxed font-light">
           Discover words in a peaceful, distraction-free environment designed for focused learning and deep understanding.
         </p>
